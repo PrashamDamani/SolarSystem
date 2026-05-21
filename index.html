@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Solar System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<canvas id="stars"></canvas>
+
+<div class="nebula"></div>
+
+<div class="solar-system">
+
+    <!-- SUN -->
+
+    <div class="sun-glow"></div>
+
+    <div class="sun clickable"
+         data-planet="sun"></div>
+
+    <!-- ORBITS -->
+
+    <div class="orbit mercury-orbit"></div>
+    <div class="orbit venus-orbit"></div>
+    <div class="orbit earth-orbit"></div>
+    <div class="orbit mars-orbit"></div>
+    <div class="orbit jupiter-orbit"></div>
+    <div class="orbit saturn-orbit"></div>
+    <div class="orbit uranus-orbit"></div>
+    <div class="orbit neptune-orbit"></div>
+
+    <!-- MERCURY -->
+
+    <div class="revolution mercury-rev">
+
+        <div class="planet-wrapper clickable"
+             data-planet="mercury">
+
+            <div class="planet mercury"></div>
+
+            <span class="planet-label">
+                ☿ Mercury
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- VENUS -->
+
+    <div class="revolution venus-rev">
+
+        <div class="planet-wrapper clickable"
+             data-planet="venus">
+
+            <div class="planet venus"></div>
+
+            <span class="planet-label">
+                ♀ Venus
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- EARTH -->
+
+    <div class="revolution earth-rev">
+
+        <div class="planet-wrapper clickable"
+             data-planet="earth">
+
+            <div class="planet earth">
+
+                <div class="moon-orbit">
+
+                    <div class="moon"></div>
+
+                </div>
+
+            </div>
+
+            <span class="planet-label">
+                🌍 Earth
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- MARS -->
+
+    <div class="revolution mars-rev">
+
+        <div class="planet-wrapper clickable"
+             data-planet="mars">
+
+            <div class="planet mars"></div>
+
+            <span class="planet-label">
+                ♂ Mars
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- JUPITER -->
+
+    <div class="revolution jupiter-rev">
+
+        <div class="planet-wrapper clickable"
+             data-planet="jupiter">
+
+            <div class="planet jupiter"></div>
+
+            <span class="planet-label">
+                ♃ Jupiter
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- SATURN -->
+
+    <div class="revolution saturn-rev">
+
+        <div class="planet-wrapper clickable"
+             data-planet="saturn">
+
+            <div class="planet saturn"></div>
+
+            <span class="planet-label">
+                ♄ Saturn
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- URANUS -->
+
+    <div class="revolution uranus-rev">
+
+        <div class="planet-wrapper clickable"
+             data-planet="uranus">
+
+            <div class="planet uranus"></div>
+
+            <span class="planet-label">
+                ⛢ Uranus
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- NEPTUNE -->
+
+    <div class="revolution neptune-rev">
+
+        <div class="planet-wrapper clickable"
+             data-planet="neptune">
+
+            <div class="planet neptune"></div>
+
+            <span class="planet-label">
+                ♆ Neptune
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= INFO PANEL ================= -->
+
+<div class="info-panel"
+     id="infoPanel">
+
+    <button id="closeBtn">
+        ✕
+    </button>
+
+    <h2 id="planetTitle">
+        🌌 Solar System
+    </h2>
+
+    <div id="planetInfo">
+
+        Click any planet to explore cosmic facts.
+
+    </div>
+
+</div>
+
+<!-- ================= GUIDE ================= -->
+
+<div class="instruction">
+
+    🖱 Hover planets • Click for facts
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
